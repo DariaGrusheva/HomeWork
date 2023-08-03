@@ -3,10 +3,10 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine("Введите число");
+Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if(number % 2 == 1)
+if (number % 2 == 1)
 {
     Console.WriteLine("Вы ввели нечетное число.");
 }
