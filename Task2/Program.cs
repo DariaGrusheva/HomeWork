@@ -4,18 +4,17 @@
 // 22 3 9 -> 22
 
 
-Console.WriteLine("Введите первое число");
+Console.Write("Введите первое число: ");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 int max = firstNumber;
 
-Console.WriteLine("Введите второе число");
+Console.Write("Введите второе число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите третье число");
+Console.Write("Введите третье число: ");
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
-if(firstNumber > max) max = firstNumber;
-if(secondNumber > max) max = secondNumber;
-if(thirdNumber > max) max = thirdNumber;
+if (secondNumber > max) max = secondNumber;
+if (thirdNumber > max) max = thirdNumber;
 
 Console.WriteLine(("Максимальное из введенных Вами чисел: ") + max + ".");
