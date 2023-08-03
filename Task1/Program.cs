@@ -4,19 +4,26 @@
 // a = -9 b = -3 -> max = -3
 
 
-Console.WriteLine("Введите первое число");
+Console.Write("Введите первое число: ");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите второе число");
+Console.Write("Введите второе число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if(firstNumber > secondNumber)
+if (firstNumber == secondNumber)
 {
-    Console.WriteLine(("Максимальное из введенных Вами чисел: ") + firstNumber);
-    Console.WriteLine(("Минимальное из введенных Вами чисел: ") + secondNumber);
+    Console.WriteLine("Вы ввели равные числа.");
 }
 else
 {
-    Console.WriteLine(("Максимальное из введенных Вами чисел: ") + secondNumber);
-    Console.WriteLine(("Минимальное из введенных Вами чиселх: ") + firstNumber);
+    if (firstNumber > secondNumber)
+    {
+        Console.WriteLine(("Максимальное из введенных Вами чисел: ") + firstNumber + ".");
+        Console.WriteLine(("Минимальное из введенных Вами чисел: ") + secondNumber + ".");
+    }
+    else
+    {
+        Console.WriteLine(("Максимальное из введенных Вами чисел: ") + secondNumber + ".");
+        Console.WriteLine(("Минимальное из введенных Вами чиселх: ") + firstNumber + ".");
+    }
 }
